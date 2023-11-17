@@ -1,0 +1,807 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+
+}
+.h-slider{
+    position: relative;
+    
+}
+.social-icons{
+    position: absolute;
+    top: 31%;
+    
+}
+.social-icons ul li{
+    list-style: none;
+  
+ 
+    text-align: center;
+    /* line-height: 35px; */
+    margin-block: 5px;
+   
+}
+
+.social-icons ul li a i{
+    padding-inline: 11px;
+    padding-block: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logo{
+    position: absolute;
+    top: 1%;
+    
+}
+.navbar li{
+    list-style: none;
+   
+    
+  
+}
+.navbar li a{
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.menu1{
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.serch{
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    
+}
+.explore{
+    text-align: center;
+    position: relative;
+}
+.explore h3{
+    font-size: 38px;
+    margin-block: 50px;
+    font-family: Myriad Pro;
+    font-weight: bolder;
+}
+.explore::after{
+    content: "";
+    background-image: url(assets/images/lne.png); background-repeat:no-repeat ;
+    position: absolute;
+    top: 60px;
+    height: 20px;
+    width: 40%;
+    left: 47%;
+}
+.explore p{
+    font-size: 14px;
+ 
+
+}
+
+.swiper-slide{
+  border: 8px solid #f2f1f1;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  transition: 0.6s;
+  text-align: center;
+}
+.swiper-slide:hover{
+    border: 8px solid #a0a0a0;
+    
+}
+
+
+
+
+.swiper-slide::before{
+   content: "+";
+   cursor: pointer;
+   text-align: center;
+   font-size: 30px;
+   color: white;
+   position: absolute;
+   top: 40%;
+   left: 39%;
+   height: 50px;
+   width: 50px;
+   background-color: black;
+   display: none;
+  
+   
+   
+   
+}
+
+.swiper-slide:hover::before{
+    display: block;
+    
+   
+}
+.swiper-slide::after{
+    
+    content: "";
+    border-bottom:100px solid black ;
+    border-left: 100px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    display: none;
+    transition: 0.5s;
+    
+}
+.swiper-slide a i{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 999;
+    font-size: 3.2vmin;
+}
+.swiper-slide:hover::after{
+    display: block;
+}
+
+.cat{
+    position: relative;
+    
+}
+.cat img{
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+   
+}
+
+.don{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    left: 0px;
+    transition: 0.6s;
+}
+.cat .don:hover { 
+    opacity: 1;
+}
+
+.cat a{
+   text-decoration: none;
+   color: white;
+   position: absolute;
+   bottom: 5%;
+   z-index: 99;
+   left: 5%;
+   display: none;
+   transition: 0.6s;
+}
+
+.cat:hover a{
+    display: block;
+}
+.bg1{
+    position: relative;
+    margin:0px;
+    padding: 0px 0 0px 0;
+    background-color: black;
+    width: 100%;
+    
+    right: 0%;
+}
+
+.bg1::before{
+    content: "";
+    background-image: url(assets/images/cctpbg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+ right: 0%;
+    
+
+}
+.bg1::after{
+    content: "";
+    background-image: url(assets/images/bgafter.png); background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    right: 0%;
+    position: absolute;
+    top: 0%;
+}
+
+.tshirt{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tshirt img{
+    margin-top: 60px;
+}
+
+.custom{
+    position: relative;
+    color: white;
+    margin: 150px auto;
+    padding: 0;
+    z-index: 2;
+}
+
+.custom h3{
+    margin-block: 50px;
+    text-align: center;
+}
+.custom h3:after{
+   content: "";
+   position: absolute;
+   padding: 27px;
+   border-bottom: 3px solid white;
+   top: 0px;
+   left: 45%;
+}
+
+.custom p{
+    text-align: center;
+    margin-block: 10px;
+    
+}
+.custom a{
+    text-align: center;
+    display: block;
+    background-color: rgb(22, 22, 22);
+    width: 20%;
+    margin: 16px auto;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.uog{
+    background-color:#1a1a1a;
+    margin-top: 40px;
+}
+.icns{
+    height: 80px;
+    width: 75px;
+    background-color: #1a1a1a;
+    margin: -30px auto;
+    line-height: 85px;
+    text-align: center;
+    font-size: 34px;
+    box-shadow: -2px 2px 6px black;
+    
+ 
+}
+.uog p{
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+    color: white;
+    font-size: 17px;
+}
+
+.hi{
+    margin-bottom: 80px;
+}
+
+.hi1{
+    margin-bottom: 50px;
+}
+
+.vgs{
+    background-color: #111111;
+}
+.img-foot{
+    margin-block: 20px;
+}
+.vgs p{
+   color: #939292;
+   margin-block: 12px;
+   font-size: 14px;
+}
+.footer-p1{
+    margin-block: 60px;
+  
+}
+.footer-p1 h5{
+    color: white;
+    margin-block: 30px;
+}
+.footer-p1 ul li{
+    list-style: square;
+    color: white;
+    margin-block: 7px;
+    
+}
+.footer-p1 ul li a{
+    color:#939292;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-p1 ul{
+    margin-block: 20px;
+}
+.last{
+    background-color: #333333;
+}
+.last p{
+    color: #939292;
+    margin-block: 7px;
+    font-size: 12px;
+}
+.last span{
+    color: white;
+    text-decoration: none;
+    
+}
+.last a{
+    text-decoration: none;
+    color: white;
+}
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+
+  span.hamburg{
+    font-size: 30px;
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+  @media only screen and (min-width: 992px) {
+    .overlay{
+      display: none;
+    }
+    .hamburg{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .menu-bar{
+      display: none;
+    }
+    .serch{
+        display: none;
+    }
+    
+  }
+ .hamburg{
+    position: absolute;
+    right: 90px;
+    top: 25px;
+    color: white;
+    z-index: 996;
+ }
+ .overlay{
+    z-index: 999;
+ }
+
+
+
+
+
+
+/* Responsive  */
+
+
+
+
+
+
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+   .custom a{
+    width: 30%;
+   }
+   .hi {
+    margin-bottom: 50px;
+}
+.navbar li a{
+    font-size: 14px;
+}
+.bg1 {
+
+    padding: 0px 0 0px 0;
+  
+}
+.footer-p1 h5{
+    font-size:16px;
+}
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:992px){
+    .explore h3{
+        font-size: 30px;
+        margin-block: 30px;
+    }
+    
+    .explore p{
+        font-size: 13px;
+    }
+    .explore::after{
+        top: 47px;
+    }
+    .swiper-slide a i{
+        display: none;
+        right: 5px;
+        font-size: 15px;
+
+    }
+    .swiper-slide::before {
+        content: "+";
+        cursor: pointer;
+        text-align: center;
+        font-size: 22px;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 39%;
+        height: 35px;
+        width: 36px;
+        background-color: black;
+        display: none;
+    }
+    .swiper-slide::after {
+        
+        border-bottom: 70px solid black;
+        border-left: 74px solid transparent;
+    }
+    
+    .swiper-slide:hover a i{
+        display: block;
+    }
+    .hi {
+        margin-bottom: 30px;
+    }
+    .cat h2{
+        font-size: 22px;
+    }
+    .custom a{
+        width: 36%;
+        padding: 4px 5px;
+    }
+    .bg1{
+        padding: 0px;
+    }
+    .custom{
+        left: 8%;
+        margin: 83px auto;
+    }
+    .tshirt img {
+        margin-top: 100px;
+    }
+    .custom p{
+        font-size: 14px;
+    }
+    .footer-p1 h5{
+        font-size:16px;
+    }
+
+}
+
+
+@media only screen and (min-width:576px) and (max-width:768px){
+    .explore h3{
+        font-size: 30px;
+        margin-block: 30px;
+    }
+    .swiper-slide::before {
+        
+            content: "+";
+            cursor: pointer;
+            text-align: center;
+            font-size: 19px;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 33%;
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            display: none;
+        
+    }
+    .swiper-slide a i{
+        font-size: 11px;
+        right: 3px ;
+        bottom: 3px;
+    }
+    .swiper-slide::after {
+        
+        border-bottom: 50px solid black;
+    border-left: 50px solid transparent;
+    }
+    .swiper-slide h6{
+        font-size: 12px;
+    }
+    .swiper-slide p{
+        font-size: 13px;
+    }
+    .explore p{
+        font-size: 13px;
+    }
+    .explore::after{
+        top: 47px;
+    }
+    .swiper-slide a i{
+        display: none;
+    }
+    .swiper-slide:hover a i{
+        display: block;
+    }
+    .hi {
+        margin-bottom: -4px;
+    }
+    .cat h2{
+        font-size: 22px;
+    }
+    .custom a{
+        width: 36%;
+        padding: 4px 5px;
+    }
+    .bg1{
+        padding: 0px;
+    }
+    .custom{
+        
+        top: -154px;
+        left:32%;
+        margin: -111px auto;
+        text-align: left;
+    }
+    .custom p{
+       
+   
+    margin-block: 9px;
+    font-size: 11px;
+    padding-inline: 100px;
+    }
+    
+    .tshirt img {
+        margin-top: 100px;
+        width: 250px;
+        
+    }
+   
+    .footer-p1 h5{
+        font-size:16px;
+    }
+    .cat-last{
+        margin-bottom: 50px;
+    }
+    
+
+}
+@media only screen and (min-width:280px) and (max-width:576px){
+    
+
+
+
+    .explore h3{
+        font-size: 30px;
+        margin-block: 30px;
+    }
+    .swiper-slide::before {
+        
+            content: "+";
+            cursor: pointer;
+            text-align: center;
+            font-size: 19px;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 33%;
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            display: none;
+        
+    }
+    .swiper-slide a i{
+        font-size: 11px;
+        right: 3px ;
+        bottom: 3px;
+    }
+    .swiper-slide::after {
+        
+        border-bottom: 50px solid black;
+    border-left: 50px solid transparent;
+    }
+    .swiper-slide h6{
+        font-size: 12px;
+    }
+    .swiper-slide p{
+        font-size: 13px;
+    }
+    .explore p{
+        font-size: 13px;
+    }
+    .explore::after{
+        top: 47px;
+    }
+    .swiper-slide a i{
+        display: none;
+    }
+    .swiper-slide:hover a i{
+        display: block;
+    }
+    .hi {
+        margin-bottom: -4px;
+    }
+    .cat h2{
+        font-size: 22px;
+    }
+    .custom a{
+        width: 26%;
+        padding: 4px 5px;
+    }
+    .bg1{
+        padding: 0px;
+    }
+    .custom{
+        
+        top: -154px;
+        left:26%;
+        margin: -111px auto;
+        text-align: left;
+    }
+   
+  
+    
+    .tshirt img {
+        margin-top: 87px;
+        width: 200px;
+        margin-left: -10px;
+        
+    }
+   
+    .footer-p1 h5{
+        font-size:16px;
+    }
+    .cat-last{
+        margin-bottom: 50px;
+    }
+    .custom h3 {
+        font-size: 15px;
+    }
+    .custom p {
+        margin-block: 9px;
+        font-size: 10px;
+        padding-inline: 125px;
+    }
+}
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:476px){
+     .explore::after{
+        top: 35px;
+        left: 45%;
+     }
+     .explore h3{
+        font-size: 18px;
+    margin-block: 20px;
+     }
+}
+
+
+@media only screen and (min-width:200px) and (max-width:300px){
+    .explore::after{
+       top: 35px;
+       left: 45%;
+    }
+    .explore h3{
+       font-size: 15px;
+   margin-block: 20px;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:346px){
+    .bg1{
+        display: none;
+    }
+    span.hamburg{
+        font-size: 15px;
+        right: 15%;
+        top: 3%;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .social-icons i{
+      font-size: 6px;
+   
+    }
+    .social-icons ul li a i{
+        padding-inline: 5px;
+    padding-block: 5px;
+    }
+    .social-icons ul li{
+     
+        margin-block: -2px
+    }
+    .social-icons ul{
+        padding-left: 20px;
+    }
+    .social-icons{
+        top:26%;
+    }
+}
+
+
+
+
+
+    
+     
